@@ -1,1 +1,9 @@
-<p>book-list works!</p>
+<div>
+    <input type="button" value="Add New Book" id="addnewbook">
+</div>
+
+<div>
+    <app-book-item *ngFor="let bookE1 of books; let i = index"
+        [book] = "bookE1"
+        [index] = "i"></app-book-item>
+</div>

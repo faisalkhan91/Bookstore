@@ -6,7 +6,7 @@ import { BookEditComponent } from '../books/book-edit/book-edit.component';
 import { BookDetailComponent } from '../books/book-detail/book-detail.component';
 
 const appRoutes: Routes = [
-  {path: '', redirectTo: '/books', pathMatch: 'full'},
+  {path: '', redirectTo: '', pathMatch: 'full'},
   {path: 'books', component: BooksComponent, children: [
     {path: '', redirectTo: '/books', pathMatch: 'full'},
     {path: 'new', component:BookEditComponent},
